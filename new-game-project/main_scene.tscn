@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://blkhvwf0dgi3y"]
+
+[node name="Main_Scene" type="Node2D"]
+
+[node name="Spawn_point" type="Marker2D" parent="."]
+position = Vector2(800, 450)
+metadata/_edit_lock_ = true
