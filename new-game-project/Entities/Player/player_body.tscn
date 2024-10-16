@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=3 uid="uid://uc7mn3vbjfs3"]
+
+[ext_resource type="Script" path="res://Entities/Player/player_movement.gd" id="1_wedbl"]
+[ext_resource type="PackedScene" uid="uid://dljrfxoshkeul" path="res://Components/Health_components/health_component.tscn" id="2_cd26c"]
+[ext_resource type="PackedScene" uid="uid://cdtvnbkryh6ut" path="res://Components/HitBox_component/hitbox_component.tscn" id="3_s67lt"]
+[ext_resource type="Script" path="res://Components/Body_shape/body_shape.gd" id="4_8arl5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qc84w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_00f77"]
+
+[node name="Player_body" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_wedbl")
+
+[node name="Health_component" parent="." instance=ExtResource("2_cd26c")]
+
+[node name="HitBox_component" parent="." instance=ExtResource("3_s67lt")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox_component"]
+shape = SubResource("CircleShape2D_qc84w")
+
+[node name="Body_shape" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_00f77")
+script = ExtResource("4_8arl5")
