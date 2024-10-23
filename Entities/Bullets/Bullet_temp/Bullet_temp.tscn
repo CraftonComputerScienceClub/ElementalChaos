@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk1iorpcl2o0h"]
+
+[ext_resource type="Script" path="res://Entities/Bullets/Bullet_temp/bullet_temp.gd" id="1_4a5vx"]
+
+[node name="Bullet_temp" type="Area2D"]
+script = ExtResource("1_4a5vx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
