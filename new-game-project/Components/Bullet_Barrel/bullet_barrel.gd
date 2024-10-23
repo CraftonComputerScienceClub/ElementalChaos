@@ -6,6 +6,3 @@ class_name Bullet_Barrel
 
 func get_mouse_vector()-> Vector2:
 	return outter_marker.position - inner_marker.position
-	
-func fire():
-	pass
