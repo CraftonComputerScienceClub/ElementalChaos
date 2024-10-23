@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://uc7mn3vbjfs3"]
+
+[ext_resource type="Script" path="res://Entities/Player/player_movement.gd" id="1_wedbl"]
+[ext_resource type="PackedScene" uid="uid://dljrfxoshkeul" path="res://Components/Health_components/health_component.tscn" id="2_cd26c"]
+[ext_resource type="PackedScene" uid="uid://cdtvnbkryh6ut" path="res://Components/HitBox_component/hitbox_component.tscn" id="3_s67lt"]
+[ext_resource type="PackedScene" uid="uid://7htjj7bd2ctd" path="res://Components/Body_shape_box/body_shape.tscn" id="4_qos2h"]
+[ext_resource type="Texture2D" uid="uid://dqkg0qey1ucub" path="res://Entities/Player/Player_Temp_Sprite.png" id="5_gf6g0"]
+[ext_resource type="PackedScene" uid="uid://dl7rtjmyxxm0l" path="res://Components/Bullet_Barrel/bullet_barrel.tscn" id="6_2ah3f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qc84w"]
+
+[node name="Player_body" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_wedbl")
+Player_Speed = 600.0
+
+[node name="Health_component" parent="." instance=ExtResource("2_cd26c")]
+
+[node name="HitBox_component" parent="." node_paths=PackedStringArray("Health") instance=ExtResource("3_s67lt")]
+Health = NodePath("../Health_component")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox_component"]
+shape = SubResource("CircleShape2D_qc84w")
+
+[node name="Body_shape_box" parent="." instance=ExtResource("4_qos2h")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.19209e-07, 0)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("5_gf6g0")
+
+[node name="Bullet_Barrel" parent="." instance=ExtResource("6_2ah3f")]

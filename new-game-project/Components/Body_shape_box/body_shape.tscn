@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://7htjj7bd2ctd"]
+
+[ext_resource type="Script" path="res://Components/Body_shape_box/body_shape.gd" id="1_g4num"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_00f77"]
+
+[node name="Body_shape" type="CollisionShape2D"]
+shape = SubResource("CircleShape2D_00f77")
+script = ExtResource("1_g4num")
