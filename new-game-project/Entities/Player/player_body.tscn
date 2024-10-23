@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dljrfxoshkeul" path="res://Components/Health_components/health_component.tscn" id="2_cd26c"]
 [ext_resource type="PackedScene" uid="uid://cdtvnbkryh6ut" path="res://Components/HitBox_component/hitbox_component.tscn" id="3_s67lt"]
 [ext_resource type="PackedScene" uid="uid://7htjj7bd2ctd" path="res://Components/Body_shape_box/body_shape.tscn" id="4_qos2h"]
-[ext_resource type="PackedScene" uid="uid://dihxpx5d53655" path="res://Components/Sprite_gen_component/sprite_gen_comp.tscn" id="5_jyjtu"]
+[ext_resource type="PackedScene" uid="uid://dihxpx5d53655" path="res://Components/Sprite_gen_controler/sprite_gen_controler.tscn" id="5_jyjtu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qc84w"]
 
@@ -22,4 +22,4 @@ shape = SubResource("CircleShape2D_qc84w")
 
 [node name="Body_shape_box" parent="." instance=ExtResource("4_qos2h")]
 
-[node name="Sprite_gen_component" parent="." instance=ExtResource("5_jyjtu")]
+[node name="Sprite_gen_controler" parent="." instance=ExtResource("5_jyjtu")]
