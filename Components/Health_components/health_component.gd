@@ -18,3 +18,6 @@ func damage(amount:int)->void:
 	
 func heal(amount:int)->void:
 	damage(-amount)
+
+func _on_hitbox_component_area_entered(area):
+	damage(1)
