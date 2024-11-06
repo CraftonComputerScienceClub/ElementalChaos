@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8la4i6uuj7yr"
-path="res://.godot/imported/p_hydrogen.png-616ae988f95dc908f23b1b63e4d17cf6.ctex"
+path="res://.godot/imported/p_hydrogen.png-969efff6dd2e0c3ed99487f51530f629.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Atoms/Hydrogen/p_hydrogen.png"
-dest_files=["res://.godot/imported/p_hydrogen.png-616ae988f95dc908f23b1b63e4d17cf6.ctex"]
+source_file="res://atoms/hydrogen/p_hydrogen.png"
+dest_files=["res://.godot/imported/p_hydrogen.png-969efff6dd2e0c3ed99487f51530f629.ctex"]
 
 [params]
 

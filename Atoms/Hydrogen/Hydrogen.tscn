@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://demk7o5orpgpj"]
 
-[ext_resource type="Texture2D" uid="uid://b8la4i6uuj7yr" path="res://Atoms/Hydrogen/p_hydrogen.png" id="1_i8sg0"]
-[ext_resource type="Script" path="res://Atoms/atom.gd" id="1_k736e"]
+[ext_resource type="Texture2D" uid="uid://b8la4i6uuj7yr" path="res://atoms/hydrogen/p_hydrogen.png" id="1_i8sg0"]
+[ext_resource type="Script" path="res://atoms/atom.gd" id="1_k736e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onb03"]
 size = Vector2(16, 16)

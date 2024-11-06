@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://uc7mn3vbjfs3"]
 
-[ext_resource type="Script" path="res://Entities/Player/player_movement.gd" id="1_wedbl"]
-[ext_resource type="PackedScene" uid="uid://dljrfxoshkeul" path="res://Components/Health_components/health_component.tscn" id="2_cd26c"]
-[ext_resource type="PackedScene" uid="uid://cdtvnbkryh6ut" path="res://Components/HitBox_component/hitbox_component.tscn" id="3_s67lt"]
-[ext_resource type="Texture2D" uid="uid://dqkg0qey1ucub" path="res://Entities/Player/Player_Temp_Sprite.png" id="5_gf6g0"]
-[ext_resource type="PackedScene" uid="uid://dl7rtjmyxxm0l" path="res://Components/Bullet_Barrel/bullet_barrel.tscn" id="6_2ah3f"]
+[ext_resource type="Script" path="res://entities/player/player_movement.gd" id="1_wedbl"]
+[ext_resource type="PackedScene" uid="uid://dljrfxoshkeul" path="res://components/health_component/health_component.tscn" id="2_cd26c"]
+[ext_resource type="PackedScene" uid="uid://cdtvnbkryh6ut" path="res://components/hitbox_component/hitbox_component.tscn" id="3_s67lt"]
+[ext_resource type="Texture2D" uid="uid://dqkg0qey1ucub" path="res://entities/player/Player_temp_sprite.png" id="5_gf6g0"]
+[ext_resource type="PackedScene" uid="uid://dl7rtjmyxxm0l" path="res://components/bullet_barrel/bullet_barrel.tscn" id="6_2ah3f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qc84w"]
 radius = 9.05539
