@@ -1,13 +1,11 @@
 extends Node
 
-var collected_atoms: Array[Global.Atoms] = []
-
-func _ready():
-	pass
 	
 func add_atom(atom: Global.Atoms):
-	collected_atoms.append(collected_atoms)
+	var packed_atom = Global.atom_scenes.get(atom)
+	self.add_child(packed_atom)
 	
 func remove_atom(atom: Global.Atoms):
-	collected_atoms.erase(atom)
+	# TODO: Add removing atoms later
+	pass
 	
